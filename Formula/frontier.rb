@@ -2,7 +2,7 @@
 class Frontier < Formula
   desc "Frontier CLI for the Federal Frontier Platform (incl. AI Workstation agent)"
   homepage "https://federalfrontier.ai"
-  version "5.9.4"
+  version "5.9.5"
   license :cannot_represent
 
   # Customer-controlled mirror: export HOMEBREW_FRONTIER_BASE_URL=https://mirror.example.lan/frontier-cli
@@ -12,20 +12,20 @@ class Frontier < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "#{BASE}/v#{version}/frontier-#{version}-darwin-arm64.tar.gz"
-      sha256 "552f041554faf93da081896a3e8790b13864e79ac42ddc18d0b81a0354c457cb"
+      sha256 "ce3926d5f5474b640c00d2fa36290abe001b92935beef56d11a461d604c5476c"
     else
       url "#{BASE}/v#{version}/frontier-#{version}-darwin-amd64.tar.gz"
-      sha256 "dcf26b6a73e3ff449f64f2fe5fdcbcf424a11bcc4c5001f1c5c1204dfcae27d8"
+      sha256 "e75bc0cdde4da78e4233f80f7f6c944575217ca2ef35159be8fb734fddce3d91"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "#{BASE}/v#{version}/frontier-#{version}-linux-arm64.tar.gz"
-      sha256 "3fa81fd0b2df5961acf269a15235b6f41c274d78e44baae956ceba6cad15c399"
+      sha256 "b6069b9a91bf6c9c70732c369ca1e1e8cd6c5de1e7286eb81231d49f8596e33a"
     else
       url "#{BASE}/v#{version}/frontier-#{version}-linux-amd64.tar.gz"
-      sha256 "25ca198aa5e2a3d80ab47b00acfd5dbea5c4c72621fc57729b42f142fd42554b"
+      sha256 "27540841d29cfbe165ef1a9720147c5bcd9207c9625ba9978d32ee976e8c7eb4"
     end
   end
 
